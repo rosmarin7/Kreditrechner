@@ -1,0 +1,138 @@
+body {
+    background-image: url(bild.jpeg);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(223, 150, 98, 0.9);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(231, 229, 227, 0.7);
+    width: 90%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 20px;
+}
+h1 {
+    color: rgba(80, 100, 126, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    margin-bottom: 0;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    padding: 20px;
+    color: rgba(80, 100, 126, 0.9);
+    
+}
+input {
+    border: none;
+}
+
+#kaufpreis,
+#eigenkapital,
+#zinssatz, #tilgung {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+#btnDarlehensLaufzeit {
+    border-radius: 20px;
+    background-color: rgba(169, 182, 198, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    border: none;
+    color: rgba(248, 246, 243, 0.9);
+}
+
+#btnCalculate {
+    border-radius: 20px;
+    background-color: rgba(248, 29, 47, 0.7);
+    font-family: 'Montserrat', sans-serif;
+    padding: 7px;
+    margin-top: 5px;
+    border: none;
+    color: rgba(231, 229, 227, 0.9);
+}
+
+#selectOptions {
+    font-family: 'Montserrat', sans-serif;
+    padding: 3px;
+    border: none;
+}
+
+#selectOptionsDarlehen {
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 3px;
+    border: none;
+}
+
+.containerFoot {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    color: rgba(231, 229, 227, 0.9);
+}
+.perMonth {
+    background-color: rgba(80, 100, 126, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    width: 35%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+
+#selectOptions {
+    display: none;
+}
+
+.creditCalculate {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rate {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#monatlicheRate, #restSchuld {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+@media all and (max-width: 680px) {
+    .container {
+        width: 85%;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    form {
+        margin-top: none;
+    }
+}

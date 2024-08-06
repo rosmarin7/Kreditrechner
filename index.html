@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&family=Montserrat:ital,wght@0,500;1,500&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Darlehensrechner 🧾</h1>
+
+            <form>
+                <p>Kaufpreis 💶</p>
+
+                <span
+                    >€
+                    <input type="text" id="kaufpreis" placeholder="Kaufpreis" />
+                </span>
+
+                <p>Eigenkapital 💶</p>
+
+                <span
+                    >€
+                    <input
+                        type="text"
+                        id="eigenkapital"
+                        placeholder="Ihr Eigenkapital"
+                    />
+                </span>
+
+                <p>Zinssatz 🔢</p>
+                <span
+                    >%
+                    <input type="text" id="zinssatz" placeholder="Zinssatz" />
+                </span>
+
+                <p>Tilgung wählen 🔢</p>
+
+                <select id="selectOptionsDarlehen">
+                    <option disabled>select an option</option>
+                    <option value="1" selected>1% Tilgung</option>
+                    <option value="2">2% Tilgung</option>
+                    <option value="3">3% Tilgung</option>
+                    <option value="4">4% Tilgung</option>
+                    <option value="5">5% Tilgung</option>
+                </select>
+
+                <p class="creditCalculate">💶 Darlehen ausrechnen 💶</p>
+
+                <button id="btnDarlehensLaufzeit">
+                    Darlehenslaufzeit wählen
+                </button>
+
+                <select id="selectOptions">
+                    <option disabled>select an option</option>
+                    <option value="1" selected>für 1 Jahr</option>
+                    <option value="5">für 5 Jahre</option>
+                    <option value="10">für 10 Jahre</option>
+                    <option value="20">für 20 Jahre</option>
+                </select>
+
+                <button id="btnCalculate">Kalkulieren</button>
+            </form>
+
+            <div class="containerFoot">
+                <div class="perMonth">
+                    <p class="rate">monatl. Rate, in €</p>
+                    <span id="monatlicheRate"></span>
+                </div>
+                <div class="perMonth">
+                    <p class="rate">Restschuld, in €</p>
+                    <span id="restSchuld"></span>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
